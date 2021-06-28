@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.streamindeamons" name="Streamin Deamons Repository" version="1.0" provider-name="streamindeamons">
+<addon id="repository.streamindemons" name="Streamin Demons Repository" version="1.0" provider-name="streamindemons">
     <extension point="xbmc.addon.repository" name="Streamin Deamons Repository">
         <dir>
             <info compressed="false">https://raw.githubusercontent.com/streamindemons/Addons/master/addons.xml</info>
@@ -8,7 +8,7 @@
         </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary>Streamin Deamons Repository</summary>
+        <summary>Streamin Demons Repository</summary>
         <description>Download our Build!</description>
         <disclaimer></disclaimer>
         <platform>all</platform>
