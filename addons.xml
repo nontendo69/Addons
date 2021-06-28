@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.program.sdwizard" name="[COLOR limegreen]Streamin Demons[/COLOR]Wizard" version="1.4.3" provider-name="streamindemons">
+<addon id="plugin.program.openwizard" name="[COLOR limegreen]Open[/COLOR]Wizard" version="1.4.9" provider-name="drinfernoo">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.requests" />
         <import addon="script.module.six" />
         <import addon="script.kodi.android.update" optional="true" version="1.1.7" />
+        <import addon="script.speedtester" optional="true" version="1.1.2" />
     </requires>
 
     <extension point="xbmc.python.pluginsource" library="default.py">
@@ -15,12 +16,26 @@
     <extension point="xbmc.service" library="startup.py" start="startup" />
 
     <extension point="xbmc.addon.metadata">
-        <summary lang="en">[COLOR limegreen]Streamin Demons[/COLOR]Wizard</summary>
-        <description lang="en">[COLOR limegreen]Streamin Demons[/COLOR]Wizard offers many maintenance features, selective add-on data saving, and automated build installs.</description>
+        <summary lang="en">[COLOR limegreen]Open[/COLOR]Wizard</summary>
+        <description lang="en">[COLOR limegreen]Open[/COLOR]Wizard offers many maintenance features, selective add-on data saving, and automated build installs.</description>
         <platform>all</platform>
         <reuselanguageinvoker>false</reuselanguageinvoker>
-        <source>https://www.github.com/streamindemons/plugin.program.openwizard/</source>
+        <source>https://www.github.com/drinfernoo/plugin.program.openwizard/</source>
         <news>
+1.4.9
+ - Fix Error Related to Log
+1.4.8
+ - Fix regex for formatting tags
+ - Fix theme selection after build install
+ - Fix downloading into invalid path
+1.4.7
+ - Don't show Matrix builds in previous versions
+1.4.6
+ - Use Speed Tester add-on from official repo
+1.4.5
+ - Fix bugs with unintended files being cleared
+1.4.4
+ - Transfer ownership
 1.4.3
  - Fix missing artwork on items (thanks @xulek)
 1.4.2
@@ -121,26 +136,6 @@
         <assets>
             <icon>icon.png</icon>
             <fanart>fanart.png</fanart>
-        </assets>
-    </extension>
-</addon>
-
-<addon id="repository.streamindemons" name="Streamin Demons Repository" version="1.0" provider-name="streamindemons">
-    <extension point="xbmc.addon.repository" name="Streamin Demons Repositor">
-        <dir>
-            <info compressed="false">https://raw.githubusercontent.com/streamindemons/Addons/master/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/streamindemons/Addons/master/addons.xml.md5</checksum>
-            <datadir zip="true">https://github.com/streamindemons/Addons/raw/master/</datadir>
-        </dir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Streamin Demons Repository</summary>
-        <description>Download our Build!</description>
-        <disclaimer></disclaimer>
-        <platform>all</platform>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
         </assets>
     </extension>
 </addon>
